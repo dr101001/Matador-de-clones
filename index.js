@@ -64,11 +64,12 @@ function save(){
 
 function reset(){
   
-  preferences.minPosts = Preferences.DEFAULT_MIN_POSTS
+  /*preferences.minPosts = Preferences.DEFAULT_MIN_POSTS
   preferences.minWeeks = Preferences.DEFAULT_MIN_WEEKS
   preferences.condition = Preferences.DEFAULT_CONDITION
   preferences.method = Preferences.DEFAULT_METHOD
-  preferences.hideMedia = Preferences.DEFAULT_HIDE_MEDIA
+  preferences.hideMedia = Preferences.DEFAULT_HIDE_MEDIA*/
+  preferences = new Preferences()
   setPageValues()
   showTinyAlert("Valores resetados")
 }
