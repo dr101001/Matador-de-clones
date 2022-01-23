@@ -1,0 +1,43 @@
+.clone{
+  transition: 0.3s;
+  background-color: #222;
+  color: #dddddd;
+  font-family: ars-maquette-web,-apple-system,BlinkMacSystemFont,'Segoe UI','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif !important;
+}
+
+.clone-label{
+  padding: 2px 0px 2px 0px;
+  margin-top: 5px;
+  display: block;
+}
+
+.clone-button{
+  margin: 2px;
+  margin-right: 5px;
+  padding: 5px 20px 5px 20px;
+  border: #c20 solid 1px;
+  border-radius: 3px;
+}
+
+.clone-button:hover{
+  background-color: #c20;
+}
+
+.clone-input{
+  border: #c20 solid 1px;
+  border-radius: 3px;
+}
+
+.clone-body::selection{
+  color: #ddd;
+  background: #c20;
+}
+
+.clone-label-rd{
+  display: inline-block;
+
+}
+
+.clone-body{
+  width: max-content;
+}

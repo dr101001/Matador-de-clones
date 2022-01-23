@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preferências</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="clone clone-body">
+  
+  
+  <label class="clone clone-label">
+    Condição
+  </label>
+  <input type="radio" value="and" name="condition" id="conditionAnd"/>
+  <label for="conditionAnd"  class="clone clone-label clone-label-rd">e</label>
+  <input class="clone clone-input" type="radio" value="or" name="condition" id="conditionOr"/>
+  <label for="conditionOr"  class="clone clone-label clone-label-rd">ou</label>
+    
+  <label class="clone clone-label" for="minPosts">
+    Quantidade mínima de posts
+  </label>
+  <input class="clone clone-input" type="number" id="minPosts" min="0"/>
+  
+  <label class="clone clone-label" for="minWeeks">
+    Tempo de cadastro mínimo (semanas)
+  </label>
+  <input class="clone clone-input" type="number" min="0" id="minWeeks"/>
+
+  <div></div>
+  <input type="checkbox" class="clone clone-input" value="false" name="hideMedia" id="hideMedia"/>
+  <label class="clone clone-label clone-label-rd" for="hideMedia" >Ocultar mídia também</label>
+ 
+  <label class="clone clone-label">
+    Método
+  </label>
+  
+  <input class="clone clone-input" type="radio" value="hide" name="method" id="methodHide"/>
+  <label for="methodHide" class="clone clone-label clone-label-rd">Ocultar</label>
+  <input class="clone clone-input" type="radio" value="spoiler" name="method" id="methodSpoiler"/>
+  <label class="clone clone-label clone-label-rd" for="methodSpoiler" >Envolver em spoiler (experimental)</label>
+
+  
+  <hr class="clone">
+
+  <button class="clone clone-button" id="save">Salvar</button>
+  <button class="clone clone-button" id="reset" title="Reseta para os valores padrão" >Resetar</button>
+  <h3 class="clone" id="tinyAlert"></h3>
+  
+  <script src="./index.js" type="module"></script>
+  
+  
+</body>
+</html>

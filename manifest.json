@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "name": "Matador de clones",
+  "description": "Bloqueia imagens de clones em potencial. Powered by JavaBB",
+  "author": "Dalton Camargo",
+  
+  "action": {
+    "default_icon": "icon.png", //ícone
+    "default_title": "Matador de clones", 
+    "default_popup": "index.html"
+  },
+  "web_accessible_resources": [{
+    "resources": ["content_launcher.js", "content.js","preferences.js", "index.js", "user.js"], //Scripts a serem carregados
+    "matches": ["<all_urls>"] //não sei o que é
+  }],
+  "content_scripts": [{
+    "css": ["style.css"],
+    "js": ["content_launcher.js"], //Launcher da parte da extenção que interage com o html (possivelmente uma gambiarra)
+    "matches": ["https://www.ignboards.com/threads/*"] //Só funciona nesse endereço
+  }],
+
+
+
+ 
+  "permissions": [
+    "storage", //Para salvar as preferências
+    "activeTab", //Para acessar a página do menu
+    "scripting" //Para a pagina de menu funcionar
+  ]
+}
